@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    string kalimat;
+    int jumlahKata = 0;
+ 
+    //memasukan inputan kalimat
+    cout << "Masukkan kalimat: ";
+    getline(cin, kalimat);
+    
+    for (int i = 0; i < kalimat.length(); i++) {
+    // Memeriksa karakter saat ini spasi atau tdk
+        if (kalimat[i] == ' ') {
+        jumlahKata++;
+        }
+    }
+    // Ditambahkn 1 kata karena kata terakhir tidak di hitung 
+    jumlahKata++;
+    
+    //output
+    cout << "Jumlah kata dalam kalimat adalah: " << jumlahKata << endl;
+ 
+    return 0;
+}
