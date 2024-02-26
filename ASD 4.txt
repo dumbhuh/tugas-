@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    //kamus
+    int angka[5];
+    //input
+    for (int i = 0; i < 5; i++)
+    {   
+        cout << "Masukan Nilai Array ke-" << i <<" ";
+        cin >> angka[i];
+    }
+    //sorting bubble
+    for (int i = 0; i < 5 - 1; i++) 
+    {
+        for (int j = 0; j < 5 - i - 1; j++)
+        {
+            if (angka[j+1] > angka[j])
+            {
+                int temp = angka[j+1];
+                angka[j+1] = angka[j];
+                angka[j] = temp;
+            }
+            
+        }
+        
+    }
+    //output
+    for (int i = 0; i < 5; i++)
+    {
+        cout << angka[i] << " ";
+    }
+    return 0;
+}

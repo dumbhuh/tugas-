@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    //kamus
+    int angka;
+    //input angka 
+    cout << "Masukan Angka : ";
+    cin >> angka; //disimpan di angka
+
+    cout << "Faktor dari " << angka << " adalah " ;
+    for (int i = 1; i <= angka; i++) //perulangan untuk menjari faktor
+    {
+        if(angka % i == 0){
+            cout << i << " "; 
+        }
+    }
+    return 0;
+}

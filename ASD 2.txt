@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int angka1,angka2,perkalian,pembagian,hasilpembagian=0;
+
+    //input angka 
+    cout << "Masukan Angka Pertama : ";
+    cin >> angka1;
+    cout << "Masukan Angka Kedua : ";
+    cin >> angka2;
+
+    //perkalian angka 
+    perkalian = 0; 
+    for (int i = 0; i < angka2; i++)
+    {
+        perkalian = perkalian + angka1; //ditambah sebanyak nilai angka 2
+    }
+
+    //pembagian angka 
+    pembagian = angka2;
+    while (pembagian <= angka1)
+    {
+        pembagian += angka2;
+        hasilpembagian++; //diambil total operasi pertambahan diatas terjadi bisa juga dihitung dari total operasi pengurangan 
+    }
+    
+    //output
+    cout << "Perkalian : " << perkalian << endl; 
+    cout << "Pembagian : " << hasilpembagian << endl; 
+
+}
